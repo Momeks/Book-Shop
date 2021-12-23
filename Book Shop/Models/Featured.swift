@@ -8,11 +8,6 @@
 import Foundation
 
 struct Featured:Codable {
-    var title:String?
-    var id:String?
+    var id:Int?
 }
 
-
-struct FeaturedContents:Codable {
-    var featureds:[Featured]
-}

@@ -10,7 +10,7 @@ import UIKit
 class FeaturedCollectionCell: UICollectionViewCell {
 
     @IBOutlet weak var banerImage: UIImageView!
-    var id:String!
+    var id:Int!
     var featuredObjects : Featured?
     
     
@@ -30,8 +30,8 @@ class FeaturedCollectionCell: UICollectionViewCell {
     
     func updateFeaturedCell() {
         
-        self.id = featuredObjects?.id
-        self.banerImage.image = UIImage(named: "\(String(describing: self.id))")
+        self.id = featuredObjects?.id ?? 0
+        self.banerImage.image = UIImage(named: String(describing: self.id!))
         self.banerImage.layer.cornerRadius = 8.0
         self.banerImage.layer.masksToBounds = true
     }

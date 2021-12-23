@@ -54,9 +54,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6Wc-5o-IYn">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6Wc-5o-IYn">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="KHu-io-JER" id="qGM-NL-IZH"/>
@@ -66,6 +65,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tyN-bf-bQ9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Wc-5o-IYn" firstAttribute="leading" secondItem="tyN-bf-bQ9" secondAttribute="leading" id="EL1-4L-X04"/>
+                            <constraint firstItem="6Wc-5o-IYn" firstAttribute="centerX" secondItem="Yic-dT-bxw" secondAttribute="centerX" id="LH9-kr-pR3"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="6Wc-5o-IYn" secondAttribute="bottom" constant="-83" id="NTe-h0-Fmc"/>
+                            <constraint firstItem="6Wc-5o-IYn" firstAttribute="centerY" secondItem="Yic-dT-bxw" secondAttribute="centerY" id="l85-bk-AK0"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="books.vertical" catalog="system" selectedImage="books.vertical.fill" id="zH7-oT-dHm">
                         <inset key="largeContentSizeImageInsets" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
