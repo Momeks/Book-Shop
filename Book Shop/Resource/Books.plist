@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>id</key>
+		<integer>100</integer>
+		<key>title</key>
+		<string>Crying in H Mart: A Memoir</string>
+		<key>author</key>
+		<string>Michelle Zauner</string>
+		<key>coverURL</key>
+		<string>https://images-us.bookshop.org/ingram/9780525657743.jpg</string>
+		<key>summary</key>
+		<string>An exploration of biculturalism, family and self told through an unflinching depiction of grief and the loss of a parent. The love language of food between Zauner and her mother is described so vividly that you’ll be craving a comforting meal while you call someone you love through tears.&quot; - Constance, Manager</string>
+		<key>publisher</key>
+		<string>Alfred A. Knopf</string>
+		<key>pages</key>
+		<integer>256</integer>
+		<key>publishDate</key>
+		<string>April 20, 2021</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<integer>102</integer>
+		<key>title</key>
+		<string>Concepcion: An Immigrant Family&apos;s Fortunes</string>
+		<key>author</key>
+		<string>Albert Samaha</string>
+		<key>coverURL</key>
+		<string>https://images-us.bookshop.org/ingram/9780593086087.jpg</string>
+		<key>summary</key>
+		<string>A journalist&apos;s powerful and incisive account of the forces steering the fate of his sprawling Filipino American family reframes how we comprehend the immigrant experience
+Nearing the age at which his mother had migrated to the US, part of the wave of non-Europeans who arrived after immigration quotas were relaxed in 1965, Albert Samaha began to question the ironclad belief in a better future that had inspired her family to uproot themselves from their birthplace. </string>
+		<key>publisher</key>
+		<string>Riverhead Books</string>
+		<key>pages</key>
+		<integer>400</integer>
+		<key>publishDate</key>
+		<string>October 12, 2021</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<integer>103</integer>
+		<key>title</key>
+		<string>Three Girls from Bronzeville: A Uniquely American Memoir of Race, Fate, and Sisterhood</string>
+		<key>author</key>
+		<string>Dawn Turner </string>
+		<key>coverURL</key>
+		<string>https://images-us.bookshop.org/ingram/9781982107703.jpg</string>
+		<key>summary</key>
+		<string>They were three Black girls. Dawn, tall and studious; her sister, Kim, younger by three years and headstrong as they come; and her best friend, Debra, already prom-queen pretty by third grade. They bonded--fervently and intensely in that unique way of little girls--as they roamed the concrete landscape of Bronzeville, a historic neighborhood on Chicago&apos;s South Side, the destination of hundreds of thousands of Black folks who fled the ravages of the Jim Crow South.</string>
+		<key>publisher</key>
+		<string>Simon &amp; Schuster</string>
+		<key>pages</key>
+		<integer>336</integer>
+		<key>publishDate</key>
+		<string>September 07, 2021</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<integer>104</integer>
+		<key>title</key>
+		<string>Seek You: A Journey Through American Loneliness</string>
+		<key>author</key>
+		<string>Kristen Radtke</string>
+		<key>coverURL</key>
+		<string>https://images-us.bookshop.org/ingram/9781524748067.jpg</string>
+		<key>summary</key>
+		<string>Ranging from the invention of the laugh-track to the rise of Instagram, the bootstrap-pulling cowboy to the brutal experiments of Harry Harlow, Radtke investigates why we engage with each other, and what we risk when we turn away. With her distinctive, emotionally-charged drawings and deeply empathetic prose, Kristen Radtke masterfully shines a light on some of our most vulnerable and sublime moments, and asks how we might keep the spaces between us from splitting entirely.</string>
+		<key>publisher</key>
+		<string>Pantheon Books</string>
+		<key>pages</key>
+		<integer>352</integer>
+		<key>publishDate</key>
+		<string>July 13, 2021</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<integer>105</integer>
+		<key>title</key>
+		<string>What Doesn&apos;t Kill You: A Life with Chronic Illness - Lessons from a Body in Revolt</string>
+		<key>author</key>
+		<string>Tessa Miller</string>
+		<key>coverURL</key>
+		<string>https://images-us.bookshop.org/ingram/9781250751454.jpg</string>
+		<key>summary</key>
+		<string>Tessa Miller was an ambitious twentysomething writer in New York City when, on a random fall day, her stomach began to seize up. At first, she toughed it out through searing pain, taking sick days from work, unable to leave the bathroom or her bed. But when it became undeniable that something was seriously wrong, Miller gave in to family pressure and went to the hospital--beginning a years-long nightmare of procedures, misdiagnoses, and life-threatening infections.</string>
+		<key>publisher</key>
+		<string>Henry Holt &amp; Company</string>
+		<key>pages</key>
+		<integer>230</integer>
+		<key>publishDate</key>
+		<string>February 02, 2021</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<integer>106</integer>
+		<key>title</key>
+		<string>Things I Have Withheld</string>
+		<key>author</key>
+		<string>Kei Miller</string>
+		<key>coverURL</key>
+		<string>https://images-us.bookshop.org/ingram/9780802158956.jpg</string>
+		<key>summary</key>
+		<string>In a deeply moving, critical and lyrical collection of interconnected essays, award-winning writer Kei Miller explores the silences in which so many important things are kept. Miller examines the experience of discrimination through this silence and what it means to breach it -- &quot;to risk words, to risk truth; and through the body and the histories those bodies inherit&quot; the crimes that haunt them, and how the meanings of our bodies can shift as we move through the world, variously assuming privilege or victimhood.</string>
+		<key>publisher</key>
+		<string>Grove Press</string>
+		<key>pages</key>
+		<integer>224</integer>
+		<key>publishDate</key>
+		<string>September 14, 2021</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<integer>107</integer>
+		<key>title</key>
+		<string>Fight Night</string>
+		<key>author</key>
+		<string>Miriam Toews</string>
+		<key>coverURL</key>
+		<string>https://images-us.bookshop.org/ingram/9781635578171.jpg</string>
+		<key>summary</key>
+		<string>&quot;You&apos;re a small thing,&quot; Grandma writes, &quot;and you must learn to fight.&quot; Swiv&apos;s Grandma, Elvira, has been fighting all her life. From her upbringing in a strict religious community, she has fought those who wanted to take away her joy, her independence, and her spirit. She has fought to make peace with her loved ones when they have chosen to leave her.</string>
+		<key>publisher</key>
+		<string>Bloomsbury Publishing</string>
+		<key>pages</key>
+		<integer>272</integer>
+		<key>publishDate</key>
+		<string>October 05, 2021</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<integer>108</integer>
+		<key>title</key>
+		<string>The Wrong End of the Telescope</string>
+		<key>author</key>
+		<string>Mina Simpson, a Lebanese doctor, arrives at the infamous Moria refugee camp on Lesbos, Greece, after being urgently summoned for help by her friend who runs an NGO there. Alienated from her family except for her beloved brother, Mina has avoided being so close to her homeland for decades. But with a week off work and apart from her wife of thirty years, Mina hopes to accomplish something meaningful, among the abundance of Western volunteers who pose for selfies with beached dinghies and the camp&apos;s children. </string>
+		<key>coverURL</key>
+		<string>https://images-us.bookshop.org/ingram/9780802157805.jpg</string>
+		<key>summary</key>
+		<string>Mina Simpson, a Lebanese doctor, arrives at the infamous Moria refugee camp on Lesbos, Greece, after being urgently summoned for help by her friend who runs an NGO there. Alienated from her family except for her beloved brother, Mina has avoided being so close to her homeland for decades. But with a week off work and apart from her wife of thirty years, Mina hopes to accomplish something meaningful, among the abundance of Western volunteers who pose for selfies with beached dinghies and the camp&apos;s children. Soon, a boat crosses bringing Sumaiya, a fiercely resolute Syrian matriarch with terminal liver cancer. </string>
+		<key>publisher</key>
+		<string>Grove Press</string>
+		<key>pages</key>
+		<integer>0</integer>
+		<key>publishDate</key>
+		<string>September 21, 2021</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<integer>109</integer>
+		<key>title</key>
+		<string>The Committed</string>
+		<key>author</key>
+		<string>Viet Thanh Nguyen</string>
+		<key>coverURL</key>
+		<string>https://images-us.bookshop.org/ingram/9780802157065.jpg</string>
+		<key>summary</key>
+		<string>The sequel to The Sympathizer, which won the 2016 Pulitzer Prize in Fiction and went on to sell over a million copies worldwide, The Committed tells the story of &quot;the man of two minds&quot; as he comes as a refugee to France and turns his hand to capitalism.
+The long-awaited new novel from one of America&apos;s most highly regarded contemporary writers, The Committed follows the unnamed Sympathizer as he arrives in Paris in the early 1980s with his blood brother Bon. The pair try to overcome their pasts and ensure their futures by engaging in capitalism in one of its purest forms: drug dealing.</string>
+		<key>publisher</key>
+		<string>Grove Press</string>
+		<key>pages</key>
+		<integer>368</integer>
+		<key>publishDate</key>
+		<string>March 02, 2021</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<integer>110</integer>
+		<key>title</key>
+		<string>The Sentence</string>
+		<key>author</key>
+		<string>Louise Erdrich</string>
+		<key>coverURL</key>
+		<string>https://images-us.bookshop.org/ingram/9780062671127.jpg</string>
+		<key>summary</key>
+		<string>Dazzling...A hard-won love letter to readers and to booksellers, as well as a compelling story about how we cope with pain and fear, injustice and illness. One good way is to press a beloved book into another&apos;s hands. Read The Sentence and then do just that. (USA Today, Four Stars)
+In this New York Times bestselling novel, Pulitzer Prize and National Book Award-winning author Louise Erdrich creates a wickedly funny ghost story, a tale of passion, of a complex marriage, and of a woman&apos;s relentless errors.</string>
+		<key>publisher</key>
+		<string>Harper</string>
+		<key>pages</key>
+		<integer>0</integer>
+		<key>publishDate</key>
+		<string>November 09, 2021</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<integer>111</integer>
+		<key>title</key>
+		<string>The Lost Apothecary</string>
+		<key>author</key>
+		<string>Sarah Penner</string>
+		<key>coverURL</key>
+		<string>https://images-us.bookshop.org/ingram/9780778311010.jpg</string>
+		<key>summary</key>
+		<string>Hidden in the depths of eighteenth-century London, a secret apothecary shop caters to an unusual kind of clientele. Women across the city whisper of a mysterious figure named Nella who sells well-disguised poisons to use against the oppressive men in their lives. But the apothecary&apos;s fate is jeopardized when her newest patron, a precocious twelve-year-old, makes a fatal mistake, sparking a string of consequences that echo through the centuries.</string>
+		<key>publisher</key>
+		<string>Park Row</string>
+		<key>pages</key>
+		<integer>320</integer>
+		<key>publishDate</key>
+		<string>March 02, 2021</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<integer>112</integer>
+		<key>title</key>
+		<string>Detransition, Baby</string>
+		<key>author</key>
+		<string>Torrey Peters</string>
+		<key>coverURL</key>
+		<string>https://images-us.bookshop.org/ingram/9780593133378.jpg</string>
+		<key>summary</key>
+		<string>Reese almost had it all: a loving relationship with Amy, an apartment in New York City, a job she didn&apos;t hate. She had scraped together what previous generations of trans women could only dream of: a life of mundane, bourgeois comforts. The only thing missing was a child. But then her girlfriend, Amy, detransitioned and became Ames, and everything fell apart. Now Reese is caught in a self-destructive pattern: avoiding her loneliness by sleeping with married men.</string>
+		<key>publisher</key>
+		<string>One World</string>
+		<key>pages</key>
+		<integer>352</integer>
+		<key>publishDate</key>
+		<string>January 12, 2021</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<integer>113</integer>
+		<key>title</key>
+		<string>Somebody Loves You</string>
+		<key>author</key>
+		<string>Mona Arshi</string>
+		<key>coverURL</key>
+		<string>https://images-us.bookshop.org/ingram/9781913505165.jpg</string>
+		<key>summary</key>
+		<string>A teacher asked me a question, and I opened my mouth as a sort of formality but closed it softly, knowing with perfect certainty that nothing would ever come out again.
+Ruby gives up talking at a young age. Her mother isn&apos;t always there to notice; she comes and goes and goes and comes, until, one day, she doesn&apos;t. Silence becomes Ruby&apos;s refuge, sheltering her from the weather of her mother&apos;s mental illness and a pressurized suburban atmosphere.</string>
+		<key>publisher</key>
+		<string>And Other Stories</string>
+		<key>pages</key>
+		<integer>176</integer>
+		<key>publishDate</key>
+		<string>November 16, 2021</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<integer>114</integer>
+		<key>title</key>
+		<string>No One Is Talking about This</string>
+		<key>author</key>
+		<string>Patricia Lockwood</string>
+		<key>coverURL</key>
+		<string>https://images-us.bookshop.org/ingram/9780593189580.jpg</string>
+		<key>summary</key>
+		<string>As this urgent, genre-defying book opens, a woman who has recently been elevated to prominence for her social media posts travels around the world to meet her adoring fans. She is overwhelmed by navigating the new language and etiquette of what she terms the portal, where she grapples with an unshakable conviction that a vast chorus of voices is now dictating her thoughts. When existential threats--from climate change and economic precariousness to the rise of an unnamed dictator and an epidemic of loneliness--begin to loom, she posts her way deeper into the portal&apos;s void. An avalanche of images, details, and references accumulate to form a landscape that is post-sense, post-irony, post-everything. Are we in hell? the people of the portal ask themselves. Are we all just going to keep doing this until we die?</string>
+		<key>publisher</key>
+		<string>Riverhead Books</string>
+		<key>pages</key>
+		<integer>224</integer>
+		<key>publishDate</key>
+		<string>February 16, 2021</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<integer>115</integer>
+		<key>title</key>
+		<string>The Prophets</string>
+		<key>author</key>
+		<string>Robert Jones Jr</string>
+		<key>coverURL</key>
+		<string>https://images-us.bookshop.org/ingram/9780593085684.jpg</string>
+		<key>summary</key>
+		<string>A singular and stunning debut novel about the forbidden union between two enslaved young men on a Deep South plantation, the refuge they find in each other, and a betrayal that threatens their existence.
+Isaiah was Samuel&apos;s and Samuel was Isaiah&apos;s. That was the way it was since the beginning, and the way it was to be until the end. In the barn they tended to the animals, but also to each other, transforming the hollowed-out shed into a place of human refuge, a source of intimacy and hope in a world ruled by vicious masters. </string>
+		<key>publisher</key>
+		<string>G.P. Putnam&apos;s Sons</string>
+		<key>pages</key>
+		<integer>400</integer>
+		<key>publishDate</key>
+		<string>G.P. Putnam&apos;s Sons</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<integer>116</integer>
+		<key>title</key>
+		<string>Orlando: A Biography</string>
+		<key>author</key>
+		<string>Virginia Woolf</string>
+		<key>coverURL</key>
+		<string>https://images-us.bookshop.org/ingram/9780156701600.jpg</string>
+		<key>summary</key>
+		<string>Virginia Woolf described &quot;Orlando&quot; as &quot;an escapade, half-laughing, half-serious; with great splashes of exaggeration, &quot; but many think Woolf&apos;s escapade is one of the most wickedly imaginative and sharply observed considerations of androgyny that this century will see.
+Orlando is, in fact, a character liberated from the restraints of time and sex. Born in the Elizabethan Age to wealth and position, he is a young male aristocrat at the beginning of the story - and a modern woman four centuries later. The hero-heroine sees monarchs come and go, hobnobs with great literary figures, and slips in and out of each new fashion. Woolf presents a brilliant pageant of history, society, and literature as well as subtle appreciation of the interplay between endings and beginnings, past and present, male and female.</string>
+		<key>publisher</key>
+		<string>Mariner Books</string>
+		<key>pages</key>
+		<integer>352</integer>
+		<key>publishDate</key>
+		<string>October 24, 1973</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<integer>117</integer>
+		<key>title</key>
+		<string>Memorial</string>
+		<key>author</key>
+		<string>Bryan Washington</string>
+		<key>coverURL</key>
+		<string>https://images-us.bookshop.org/ingram/9780593087275.jpg</string>
+		<key>summary</key>
+		<string>A funny and profound story about family in all its strange forms, joyful and hard-won vulnerability, becoming who you&apos;re supposed to be, and the limits of love.
+Benson and Mike are two young guys who live together in Houston. Mike is a Japanese American chef at a Mexican restaurant and Benson&apos;s a Black day care teacher, and they&apos;ve been together for a few years--good years--but now they&apos;re not sure why they&apos;re still a couple. There&apos;s the sex, sure, and the meals Mike cooks for Benson, and, well, they love each other.</string>
+		<key>publisher</key>
+		<string>Riverhead Books</string>
+		<key>pages</key>
+		<integer>320</integer>
+		<key>publishDate</key>
+		<string>October 27, 2020</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<integer>118</integer>
+		<key>title</key>
+		<string>Juliet Takes a Breath</string>
+		<key>author</key>
+		<string>Gabby Rivera</string>
+		<key>coverURL</key>
+		<string>https://images-us.bookshop.org/ingram/9780593108192.jpg</string>
+		<key>summary</key>
+		<string>Juliet Milagros Palante is a self-proclaimed closeted Puerto Rican baby dyke from the Bronx. Only, she&apos;s not so closeted anymore. Not after coming out to her family the night before flying to Portland, Oregon, to intern with her favorite feminist writer--what&apos;s sure to be a life-changing experience. And when Juliet&apos;s coming out crashes and burns, she&apos;s not sure her mom will ever speak to her again.</string>
+		<key>publisher</key>
+		<string>Dial Books</string>
+		<key>pages</key>
+		<integer>320</integer>
+		<key>publishDate</key>
+		<string>May 11, 2021</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<integer>119</integer>
+		<key>title</key>
+		<string>Zami: A New Spelling of My Name: A Biomythography</string>
+		<key>author</key>
+		<string>Geraldine Audre Lorde</string>
+		<key>coverURL</key>
+		<string>https://images-us.bookshop.org/ingram/9780895941220.jpg</string>
+		<key>summary</key>
+		<string>&quot;ZAMI is a fast-moving chronicle. From the author&apos;s vivid childhood memories in Harlem to her coming of age in the late 1950s, the nature of Audre Lorde&apos;s work is cyclical. It especially relates the linkage of women who have shaped her . . . Lorde brings into play her craft of lush description and characterization. It keeps unfolding page after page.&quot;--Off Our Backs</string>
+		<key>publisher</key>
+		<string>Crossing Press</string>
+		<key>pages</key>
+		<integer>272</integer>
+		<key>publishDate</key>
+		<string>January 01, 1982</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<integer>120</integer>
+		<key>title</key>
+		<string>The Gravity of Us</string>
+		<key>author</key>
+		<string>Phil Stamper</string>
+		<key>coverURL</key>
+		<string>https://images-us.bookshop.org/ingram/9781547600144.jpg</string>
+		<key>summary</key>
+		<string>Cal wants to be a journalist, and he&apos;s already well underway with almost half a million followers on his FlashFame app and an upcoming internship at Buzzfeed. But his plans are derailed when his pilot father is selected for a highly-publicized NASA mission to Mars. Within days, Cal and his parents leave Brooklyn for hot and humid Houston.
+With the entire nation desperate for any new information about the astronauts, Cal finds himself thrust in the middle of a media circus. Suddenly his life is more like a reality TV show, with his constantly bickering parents struggling with their roles as the perfect American family.</string>
+		<key>publisher</key>
+		<string>Bloomsbury YA</string>
+		<key>pages</key>
+		<integer>320</integer>
+		<key>publishDate</key>
+		<string>February 04, 2020</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<integer>121</integer>
+		<key>title</key>
+		<string>Beautiful World, Where Are You</string>
+		<key>author</key>
+		<string>Sally Rooney</string>
+		<key>coverURL</key>
+		<string>https://images-us.bookshop.org/ingram/9780374602604.jpg</string>
+		<key>summary</key>
+		<string>Alice, a novelist, meets Felix, who works in a warehouse, and asks him if he&apos;d like to travel to Rome with her. In Dublin, her best friend, Eileen, is getting over a break-up, and slips back into flirting with Simon, a man she has known since childhood.
+Alice, Felix, Eileen, and Simon are still young--but life is catching up with them. They desire each other, they delude each other, they get together, they break apart. They have sex, they worry about sex, they worry about their friendships and the world they live in. Are they standing in the last lighted room before the darkness, bearing witness to something? Will they find a way to believe in a beautiful world?</string>
+		<key>publisher</key>
+		<string>Farrar, Straus and Giroux</string>
+		<key>pages</key>
+		<integer>368</integer>
+		<key>publishDate</key>
+		<string>September 07, 2021</string>
+	</dict>
+</array>
+</plist>

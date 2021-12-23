@@ -12,6 +12,7 @@ struct Featured:Codable {
     var id:String?
 }
 
+
 struct FeaturedContents:Codable {
     var featureds:[Featured]
 }
