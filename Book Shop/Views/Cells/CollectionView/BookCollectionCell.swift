@@ -24,9 +24,8 @@ class BookCollectionCell: UICollectionViewCell {
     func setup() {
         let view = loadViewFromNib()
         view.frame = bounds
-        addSubview(view)
         
-      
+        addSubview(view)
     }
 
     
@@ -37,8 +36,7 @@ class BookCollectionCell: UICollectionViewCell {
     }
     
 
-        
-        func updateBookCellContents() {
+    func updateBookCellContents() {
             
             self.id = bookObject?.id ?? 0
             let coverURL = bookObject?.coverURL ?? ""
@@ -50,11 +48,12 @@ class BookCollectionCell: UICollectionViewCell {
             
             self.layer.rasterizationScale = UIScreen.main.scale
             self.layer.shouldRasterize = true
-            
             self.cover.layer.cornerRadius = 5.0
             self.bookDepth.layer.cornerRadius = 5.0
             self.cover.layer.masksToBounds = true
             self.bookDepth.layer.masksToBounds = true
+            
+            self.addShadow(cornerRadius: 2.0, shadowRadius: 6.0, shadowOpacity: 0.5, shadowPathInset:  (dx: 10, dy: 18), shadowPathOffset:  (dx: 0, dy: 1))
             
         }
 

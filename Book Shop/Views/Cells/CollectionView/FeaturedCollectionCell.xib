@@ -10,14 +10,14 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FeaturedCollectionCell" id="gTV-IL-0wX" customClass="FeaturedCollectionCell" customModule="Book_Shop" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="340" height="215"/>
+            <rect key="frame" x="0.0" y="0.0" width="340" height="208"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="340" height="215"/>
+                <rect key="frame" x="0.0" y="0.0" width="340" height="208"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="100" translatesAutoresizingMaskIntoConstraints="NO" id="euA-2v-kVi">
-                        <rect key="frame" x="0.0" y="20" width="340" height="175"/>
+                        <rect key="frame" x="0.0" y="13" width="340" height="175"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="340" id="5of-yl-iXe"/>
                             <constraint firstAttribute="height" constant="175" id="uZH-iJ-Wqh"/>
@@ -27,16 +27,16 @@
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstItem="euA-2v-kVi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="7ir-dR-eH9"/>
+                <constraint firstItem="euA-2v-kVi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="13" id="7ir-dR-eH9"/>
                 <constraint firstItem="euA-2v-kVi" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="8IB-8l-cEa"/>
-                <constraint firstItem="euA-2v-kVi" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="ax9-RE-qGz"/>
+                <constraint firstItem="euA-2v-kVi" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" constant="-3.5" id="ax9-RE-qGz"/>
                 <constraint firstItem="euA-2v-kVi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jCO-Yr-j7n"/>
             </constraints>
-            <size key="customSize" width="340" height="215"/>
+            <size key="customSize" width="340" height="208"/>
             <connections>
                 <outlet property="banerImage" destination="euA-2v-kVi" id="faD-N6-h6T"/>
             </connections>
-            <point key="canvasLocation" x="92.753623188405811" y="100.11160714285714"/>
+            <point key="canvasLocation" x="92.753623188405811" y="97.767857142857139"/>
         </collectionViewCell>
     </objects>
     <resources>

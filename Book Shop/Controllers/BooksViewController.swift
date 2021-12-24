@@ -31,7 +31,6 @@ class BooksViewController: UIViewController {
     }
     
     
-    
     func getDataFrom(plist:String) -> [Book] {
         let url = Bundle.main.url(forResource: plist, withExtension: "plist")!
         let data = try! Data(contentsOf: url)
@@ -224,14 +223,15 @@ extension BooksViewController: UICollectionViewDelegateFlowLayout {
         return 0
     }
     
+    
     func collectionView(_ collectionView: UICollectionView, layout _: UICollectionViewLayout, sizeForItemAt _: IndexPath) -> CGSize {
         
         let section = BooksCategory.allCases[collectionView.tag]
         
         if section == .featured {
-            return CGSize(width: 340, height: 215)
+            return CGSize(width: 340, height: 208)
         } else {
-            return CGSize(width: 120, height: 172)
+            return CGSize(width: 120, height: 186)
         }
     
     }
