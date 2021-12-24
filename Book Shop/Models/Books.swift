@@ -9,7 +9,7 @@ import Foundation
 
 struct Book:Codable {
     
-    var id:String?
+    var id:Int?
     var title:String?
     var summary:String?
     var coverURL:String?

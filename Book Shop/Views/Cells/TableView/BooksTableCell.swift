@@ -29,6 +29,8 @@ class BooksTableCell: UITableViewCell {
         
         //First Cell: Featured Books
         collectionView.register(cell: FeaturedCollectionCell.self)
+        collectionView.register(cell: BookCollectionCell.self)
+        collectionView.register(cell: BookCollectionCell.self)
         
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.showsVerticalScrollIndicator = false
@@ -85,4 +87,7 @@ class BooksTableCell: UITableViewCell {
 
         collectionView.reloadData()
     }
+
+    
+    
 }
