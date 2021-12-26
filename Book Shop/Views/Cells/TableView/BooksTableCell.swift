@@ -22,12 +22,8 @@ class BooksTableCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
 
-        
         collectionView = CollectionView(frame: .zero, collectionViewLayout: collectionFlowLayout)
         
-        // register cells
-        
-        //First Cell: Featured Books
         collectionView.register(cell: FeaturedCollectionCell.self)
         collectionView.register(cell: BookCollectionCell.self)
         collectionView.register(cell: BookCollectionCell.self)
@@ -42,21 +38,21 @@ class BooksTableCell: UITableViewCell {
         collectionView.backgroundColor = .clear
         self.backgroundColor = .clear
 
-        
         contentView.addSubview(collectionView)
     }
 
     
-    //MARK: - init
 
     required init?(coder _: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
+    
 
     final override func layoutSubviews() {
         super.layoutSubviews()
@@ -64,9 +60,9 @@ class BooksTableCell: UITableViewCell {
         collectionView.frame = contentView.bounds
     }
     
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        // Configure the view for the selected state
     }
     
     
@@ -88,6 +84,5 @@ class BooksTableCell: UITableViewCell {
         collectionView.reloadData()
     }
 
-    
     
 }

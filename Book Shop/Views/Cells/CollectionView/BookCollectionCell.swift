@@ -20,31 +20,33 @@ class BookCollectionCell: UICollectionViewCell {
         AspectScaledToFillSizeFilter(size: CGSize(width: 150, height: 250))
     }
     
+ 
     
-    func setup() {
-        let view = loadViewFromNib()
-        view.frame = bounds
-        
-        addSubview(view)
-    }
 
-    
     func loadViewFromNib() -> UIView {
         let nib = UINib(nibName: "BookCollectionCell", bundle: nil)
         let view = nib.instantiate(withOwner: self, options: nil).first as! UIView
         return view
     }
     
+    
 
+    
     func updateBookCellContents() {
+          
+        UIView.animate(withDuration: 0.5, animations: {
             
+            self.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
+            self.transform = CGAffineTransform(scaleX: 1, y: 1)
+        })
+        
+        
             self.id = bookObject?.id ?? 0
             let coverURL = bookObject?.coverURL ?? ""
     
             DispatchQueue.main.async {
                 self.cover.af.setImage(withURL: URL(string: coverURL)!, placeholderImage: UIImage(named: "Default"), filter: self.resizeFilter)
             }
-            
             
             self.layer.rasterizationScale = UIScreen.main.scale
             self.layer.shouldRasterize = true
@@ -57,6 +59,4 @@ class BookCollectionCell: UICollectionViewCell {
             
         }
 
-
-    
 }

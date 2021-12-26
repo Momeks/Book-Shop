@@ -26,16 +26,8 @@ class BooksViewController: UIViewController {
     
         //Fetch Data
         featuredBooks = [Featured(id: 100), Featured(id: 102), Featured(id: 110), Featured(id: 112), Featured(id: 115), Featured(id: 121)]
-        bestSeller = getDataFrom(plist: "Best Seller")
-        newArrival = getDataFrom(plist: "New Arrival")
-    }
-    
-    
-    func getDataFrom(plist:String) -> [Book] {
-        let url = Bundle.main.url(forResource: plist, withExtension: "plist")!
-        let data = try! Data(contentsOf: url)
-        let decoder = PropertyListDecoder()
-        return try! decoder.decode([Book].self, from: data)
+        bestSeller = PLISTDataSerivce.shared.getDataFrom(plist: "Best Seller")
+        newArrival = PLISTDataSerivce.shared.getDataFrom(plist: "New Arrival")
     }
     
 }
@@ -190,12 +182,34 @@ extension BooksViewController: UICollectionViewDelegate, UICollectionViewDataSou
             cell.bookObject = section == .bestSeller ? bestSeller[indexPath.row] : newArrival[indexPath.row]
             cell.updateBookCellContents()
             return cell
-            
         }
     
     }
     
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let section = BooksCategory.allCases[collectionView.tag]
+    
+        switch section {
+            
+        case .featured:
+            let cell = collectionView.cellForItem(at: indexPath) as! FeaturedCollectionCell
+            presentBookDetailsWith(id: cell.id)
+    
+        case .bestSeller , .newArrivals:
+            let cell = collectionView.cellForItem(at: indexPath) as! BookCollectionCell
+            presentBookDetailsWith(id: cell.id)
+        }
+        
+    }
+    
+    
+    func presentBookDetailsWith(id:Int) {
+        let detailsVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DetailViewController") as! DetailsViewController
+        detailsVC.bookID = id
+        present(detailsVC, animated: true, completion: nil)
+    }
     
     /*
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
