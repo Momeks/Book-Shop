@@ -19,7 +19,6 @@ class PLISTDataSerivce {
     }
     
     
-    
     func lookForBookWith(id:Int) -> Book {
         
         let url = Bundle.main.url(forResource: "Best Seller", withExtension: "plist")!

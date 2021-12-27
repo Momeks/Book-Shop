@@ -15,6 +15,13 @@ class DetailsViewController: UIViewController {
     var items = 0
     @IBOutlet weak var bookmarkButton: UIButton!
     
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -94,9 +101,9 @@ extension DetailsViewController: UITableViewDataSource, UITableViewDelegate {
             cell.bookTitle.text = bookDetails?.title ?? ""
         case 1:
             cell.author.text = "By \(bookDetails?.author ?? "")"
-        case 2:
-            cell.descriptions.text = bookDetails?.summary ?? ""
         case 3:
+            cell.descriptions.text = bookDetails?.summary ?? ""
+        case 4:
             cell.pages.text = String(describing: bookDetails?.pages ?? 0)
             cell.publisher.text = bookDetails?.publisher ?? ""
             cell.publishDate.text = bookDetails?.publishDate ?? ""
@@ -125,8 +132,10 @@ extension DetailsViewController: UITableViewDataSource, UITableViewDelegate {
         case 1:
             cellID = "author"
         case 2:
-            cellID = "descriptions"
+            cellID = "sample"
         case 3:
+            cellID = "descriptions"
+        case 4:
             cellID = "info"
         default:
             cellID = ""
@@ -137,7 +146,7 @@ extension DetailsViewController: UITableViewDataSource, UITableViewDelegate {
     
     
   @objc  func animateTableCell() {
-        items = 4
+        items = 5
       
         tableView.reloadData()
         

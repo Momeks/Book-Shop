@@ -179,6 +179,7 @@ extension BooksViewController: UICollectionViewDelegate, UICollectionViewDataSou
             
         case .featured:
             let cell = collectionView.cellForItem(at: indexPath) as! FeaturedCollectionCell
+           
             presentBookDetailsWith(id: cell.id)
     
         case .bestSeller , .newArrivals:

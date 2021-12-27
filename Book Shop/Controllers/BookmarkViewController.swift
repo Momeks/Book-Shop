@@ -10,7 +10,7 @@ import AlamofireImage
 import CoreData
 
 
-class BookmarkViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class BookmarkViewController: UIViewController {
     
     //MARK: 🔻 Vars and outletes
     var collectionView: CollectionView!
@@ -39,13 +39,16 @@ class BookmarkViewController: UIViewController, UICollectionViewDataSource, UICo
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //Setup CollectionView
         setupCollectionView()
-        
     }
     
-    //MARK: 🔻 Setup CollectionView
+}
+
+
+//MARK: 🔻 Setup CollectionView
+extension BookmarkViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+    
+    
     func setupCollectionView() {
         
         collectionView = CollectionView(frame:view.frame, collectionViewLayout: collectionFlowLayout)
@@ -110,24 +113,17 @@ class BookmarkViewController: UIViewController, UICollectionViewDataSource, UICo
        
         
         cell.bookObject = PLISTDataSerivce.shared.lookForBookWith(id: cell.id)
-        
         BookCovers.shared.cover = cell.cover.image
-        
         BookCovers.shared.backCover = BookCovers.shared.backCover(title: cell.bookObject?.title ?? "",
                                                                   author: cell.bookObject?.author ?? "",
                                                                   description: cell.bookObject?.summary ?? "",
                                                                   color: cell.bookObject?.color ?? "")
         
         BookCovers.shared.sideCover = BookCovers.shared.sideCover(title: cell.bookObject?.title ?? "", color: cell.bookObject?.color ?? "")
-        
         presentBookDetailsWith(id: cell.id)
     }
     
-    
 }
-
-
-
 
 //MARK: 🔻 Setup CollectionView Flow Layout
 extension BookmarkViewController: UICollectionViewDelegateFlowLayout {
@@ -149,6 +145,5 @@ extension BookmarkViewController: UICollectionViewDelegateFlowLayout {
             return CGSize(width: 120, height: 186)
     }
     
-   
-
+    
 }

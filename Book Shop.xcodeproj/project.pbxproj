@@ -14,6 +14,8 @@
 		7B7EA02C2778B87D00BA433A /* BookCovers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7EA02B2778B87D00BA433A /* BookCovers.swift */; };
 		7B7EA0532779BE0900BA433A /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7EA0522779BE0900BA433A /* BookmarkViewController.swift */; };
 		7B7EA0572779C15600BA433A /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7EA0562779C15600BA433A /* CoreDataService.swift */; };
+		7B7EA0592779DF2700BA433A /* ReadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7EA0582779DF2700BA433A /* ReadingViewController.swift */; };
+		7B7EA05B2779EAC200BA433A /* Sample.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7B7EA05A2779EAC200BA433A /* Sample.pdf */; };
 		7BEE1C372773B4F600BF7B11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE1C362773B4F600BF7B11 /* AppDelegate.swift */; };
 		7BEE1C392773B4F600BF7B11 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE1C382773B4F600BF7B11 /* SceneDelegate.swift */; };
 		7BEE1C3B2773B4F600BF7B11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE1C3A2773B4F600BF7B11 /* ViewController.swift */; };
@@ -44,6 +46,8 @@
 		7B7EA02B2778B87D00BA433A /* BookCovers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCovers.swift; sourceTree = "<group>"; };
 		7B7EA0522779BE0900BA433A /* BookmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
 		7B7EA0562779C15600BA433A /* CoreDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		7B7EA0582779DF2700BA433A /* ReadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingViewController.swift; sourceTree = "<group>"; };
+		7B7EA05A2779EAC200BA433A /* Sample.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Sample.pdf; sourceTree = "<group>"; };
 		7BEE1C332773B4F600BF7B11 /* Book Shop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Book Shop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BEE1C362773B4F600BF7B11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BEE1C382773B4F600BF7B11 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +136,7 @@
 		7BEE1C4D2773B95B00BF7B11 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				7B7EA05A2779EAC200BA433A /* Sample.pdf */,
 				7BEE1C422773B4F800BF7B11 /* Assets.xcassets */,
 				7BEE1C722775C5F900BF7B11 /* Best Seller.plist */,
 				7BEE1C732775C5F900BF7B11 /* New Arrival.plist */,
@@ -166,6 +171,7 @@
 			children = (
 				7BEE1C5E277470EB00BF7B11 /* BooksViewController.swift */,
 				7BEE1C7A2777555900BF7B11 /* DetailsViewController.swift */,
+				7B7EA0582779DF2700BA433A /* ReadingViewController.swift */,
 				7B7EA0272778960800BA433A /* Book3DViewController.swift */,
 				7B7EA0522779BE0900BA433A /* BookmarkViewController.swift */,
 			);
@@ -290,6 +296,7 @@
 				7BEE1C752775C5F900BF7B11 /* New Arrival.plist in Resources */,
 				7BEE1C3E2773B4F600BF7B11 /* Main.storyboard in Resources */,
 				7BEE1C742775C5F900BF7B11 /* Best Seller.plist in Resources */,
+				7B7EA05B2779EAC200BA433A /* Sample.pdf in Resources */,
 				7BEE1C6E2775BF6C00BF7B11 /* BookCollectionCell.xib in Resources */,
 				7B7EA02A2778963400BA433A /* 3DBook.scnassets in Resources */,
 			);
@@ -309,6 +316,7 @@
 				7B7EA02627786C1400BA433A /* PLISTDataSerivce.swift in Sources */,
 				7BEE1C6D2775BF6C00BF7B11 /* BookCollectionCell.swift in Sources */,
 				7BEE1C372773B4F600BF7B11 /* AppDelegate.swift in Sources */,
+				7B7EA0592779DF2700BA433A /* ReadingViewController.swift in Sources */,
 				7BEE1C5927746F9A00BF7B11 /* Extensions.swift in Sources */,
 				7BEE1C632774730100BF7B11 /* FeaturedCollectionCell.swift in Sources */,
 				7BEE1C412773B4F700BF7B11 /* Book_Shop.xcdatamodeld in Sources */,
