@@ -120,8 +120,6 @@ extension DetailsViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     
-    
-    
     func cellIdentifierFor(row:Int) -> String {
         
         var cellID:String?

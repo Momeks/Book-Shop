@@ -23,18 +23,12 @@ class BookCollectionCell: UICollectionViewCell {
     var hexString:String!
     
 
-    
- 
-    
-
     func loadViewFromNib() -> UIView {
         let nib = UINib(nibName: "BookCollectionCell", bundle: nil)
         let view = nib.instantiate(withOwner: self, options: nil).first as! UIView
         return view
     }
     
-    
-
     
     func updateBookCellContents() {
           

@@ -17,7 +17,6 @@ class ReadingViewController: UIViewController  {
         return true
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

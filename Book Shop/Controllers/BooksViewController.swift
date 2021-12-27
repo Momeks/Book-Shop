@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Alamofire
+import AlamofireImage
 
 class BooksViewController: UIViewController {
 
@@ -110,7 +112,6 @@ extension BooksViewController: UITableViewDelegate, UITableViewDataSource {
         for a in cells {
             let cell: UITableViewCell = a as UITableViewCell
             
-            
             UIView.animate(withDuration: 1.1, delay: 0.05 * Double(index), usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: [], animations: {
                 
                 cell.alpha = 0
@@ -157,11 +158,10 @@ extension BooksViewController: UICollectionViewDelegate, UICollectionViewDataSou
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FeaturedCollectionCell", for: indexPath) as! FeaturedCollectionCell
             cell.featuredObjects = featuredBooks[indexPath.row]
             cell.updateFeaturedCell()
-            cell.layer.rasterizationScale = UIScreen.main.scale
-            cell.layer.shouldRasterize = true
             return cell
             
         case .bestSeller , .newArrivals:
+            
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BookCollectionCell", for: indexPath) as! BookCollectionCell
             cell.bookObject = section == .bestSeller ? bestSeller[indexPath.row] : newArrival[indexPath.row]
             cell.updateBookCellContents()
@@ -171,6 +171,7 @@ extension BooksViewController: UICollectionViewDelegate, UICollectionViewDataSou
     }
     
     
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         let section = BooksCategory.allCases[collectionView.tag]
@@ -178,9 +179,22 @@ extension BooksViewController: UICollectionViewDelegate, UICollectionViewDataSou
         switch section {
             
         case .featured:
+            
             let cell = collectionView.cellForItem(at: indexPath) as! FeaturedCollectionCell
+            
+            let data = PLISTDataSerivce.shared.lookForBookWith(id: cell.id)
+            
+            BookCovers.shared.sideCover = BookCovers.shared.sideCover(title: data.title ?? "", color: data.color ?? "")
+          
+            BookCovers.shared.backCover = BookCovers.shared.backCover(title: data.title ?? "",
+                                                                      author: data.author ?? "",
+                                                                      description: data.summary ?? "",
+                                                                      color: data.color ?? "")
            
-            presentBookDetailsWith(id: cell.id)
+            BookCovers.shared.cover = UIImage(named:"c-\(cell.id!)")
+        
+            self.presentBookDetailsWith(id: cell.id)
+
     
         case .bestSeller , .newArrivals:
           
