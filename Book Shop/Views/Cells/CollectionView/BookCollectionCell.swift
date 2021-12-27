@@ -8,6 +8,12 @@
 import UIKit
 import AlamofireImage
 
+
+var resizeFilter :ImageFilter {
+   AspectScaledToFillSizeFilter(size: CGSize(width: 150, height: 250))
+}
+
+
 class BookCollectionCell: UICollectionViewCell {
     
     @IBOutlet weak var cover: UIImageView!
@@ -16,9 +22,7 @@ class BookCollectionCell: UICollectionViewCell {
     var bookObject : Book?
     var hexString:String!
     
-    private var resizeFilter :ImageFilter {
-        AspectScaledToFillSizeFilter(size: CGSize(width: 150, height: 250))
-    }
+
     
  
     
@@ -40,13 +44,12 @@ class BookCollectionCell: UICollectionViewCell {
             self.transform = CGAffineTransform(scaleX: 1, y: 1)
         })
         
-        
             self.id = bookObject?.id ?? 0
             self.hexString = bookObject?.color ?? "00000"
             let coverURL = bookObject?.coverURL ?? ""
     
             DispatchQueue.main.async {
-                self.cover.af.setImage(withURL: URL(string: coverURL)!, placeholderImage: UIImage(named: "Default"), filter: self.resizeFilter)
+                self.cover.af.setImage(withURL: URL(string: coverURL)!, placeholderImage: UIImage(named: "Default"), filter: resizeFilter)
             }
             
             self.layer.rasterizationScale = UIScreen.main.scale

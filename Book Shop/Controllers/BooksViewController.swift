@@ -83,20 +83,7 @@ extension BooksViewController: UITableViewDelegate, UITableViewDataSource {
         title.font = UIFont(name: "Georgia-Bold", size: 20)
         title.textColor = .label
         view.addSubview(title)
-        
-        if section != .featured {
-            
-        //See More button
-        let button = UIButton(frame: CGRect(x: tableView.frame.maxX - 130 , y: 0, width: 200, height: 20))
-        button.setTitle("See All", for: .normal)
-        button.setTitleColor(.label, for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 10, weight: .medium)
-        button.addTarget(self, action: #selector(seeAllBooks(_:)), for: .touchUpInside)
-        button.tag = section.hashValue
-        view.addSubview(button)
-        
-        }
-        
+    
             return view
     }
 
@@ -106,11 +93,7 @@ extension BooksViewController: UITableViewDelegate, UITableViewDataSource {
     }
    
     
-    @objc func seeAllBooks(_ button:UIButton) {
-        
-    }
-    
-    
+  
     func animateTableCell() {
         tableView.reloadData()
         
@@ -199,7 +182,9 @@ extension BooksViewController: UICollectionViewDelegate, UICollectionViewDataSou
             presentBookDetailsWith(id: cell.id)
     
         case .bestSeller , .newArrivals:
+          
             let cell = collectionView.cellForItem(at: indexPath) as! BookCollectionCell
+           
             BookCovers.shared.cover = cell.cover.image
             
             BookCovers.shared.backCover = BookCovers.shared.backCover(title: cell.bookObject?.title ?? "",
@@ -214,11 +199,6 @@ extension BooksViewController: UICollectionViewDelegate, UICollectionViewDataSou
     }
     
     
-    func presentBookDetailsWith(id:Int) {
-        let detailsVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DetailViewController") as! DetailsViewController
-        detailsVC.bookID = id
-        present(detailsVC, animated: true, completion: nil)
-    }
     
     /*
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -263,12 +243,3 @@ extension BooksViewController: UICollectionViewDelegateFlowLayout {
 
 }
 
-
-extension BooksViewController: Book3DViewControllerDelegate {
-    
-    func setCover(image: UIImage) {
-        
-    }
-    
-    
-}

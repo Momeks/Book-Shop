@@ -8,10 +8,6 @@
 import UIKit
 import SceneKit
 
-protocol Book3DViewControllerDelegate {
-    func setCover(image:UIImage)
-}
-
 
 class Book3DViewController: UIViewController {
     
@@ -19,7 +15,6 @@ class Book3DViewController: UIViewController {
     @IBOutlet weak var contentView: UIView!
     var node:SCNNode!
     var didEnd = false
-
     
     @IBOutlet weak var coverImage: UIImageView!
     

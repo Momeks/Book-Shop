@@ -43,11 +43,44 @@
                     </tabBar>
                     <connections>
                         <segue destination="KHu-io-JER" kind="relationship" relationship="viewControllers" id="wls-Cl-UZY"/>
+                        <segue destination="lWm-XX-y4Z" kind="relationship" relationship="viewControllers" id="khu-7e-ykp"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DGF-2a-wfr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-652" y="114"/>
+        </scene>
+        <!--Bookmark View Controller-->
+        <scene sceneID="nsd-LK-abE">
+            <objects>
+                <viewController id="lWm-XX-y4Z" customClass="BookmarkViewController" customModule="Book_Shop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iFv-O6-A2T">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Bookmark" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="clw-6R-nDt">
+                                <rect key="frame" x="136" y="395" width="103" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Fes-YX-aer"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="clw-6R-nDt" firstAttribute="top" secondItem="Fes-YX-aer" secondAttribute="top" constant="255" id="8rl-yR-eGJ"/>
+                            <constraint firstItem="clw-6R-nDt" firstAttribute="centerX" secondItem="iFv-O6-A2T" secondAttribute="centerX" id="g0u-T4-iFg"/>
+                            <constraint firstItem="clw-6R-nDt" firstAttribute="centerY" secondItem="iFv-O6-A2T" secondAttribute="centerY" id="nmG-Tw-dKh"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="bookmark" catalog="system" selectedImage="bookmark.fill" id="JWE-s2-j5J"/>
+                    <connections>
+                        <outlet property="status" destination="clw-6R-nDt" id="uyU-Dy-9xM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ki-vW-xwi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-652" y="903.69458128078827"/>
         </scene>
         <!--Books View Controller-->
         <scene sceneID="BeK-1v-OQj">
@@ -295,81 +328,51 @@
                                     <outlet property="delegate" destination="0X3-Aj-E3D" id="mw7-QK-EGe"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSF-a9-dFJ">
+                                <rect key="frame" x="16" y="20" width="21" height="22.666666666666671"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="xmark" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="close:" destination="0X3-Aj-E3D" eventType="touchUpInside" id="9qK-7g-C03"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEB-he-SwN">
+                                <rect key="frame" x="338.66666666666669" y="19" width="20.333333333333314" height="24.666666666666671"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="bookmark" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="addToBookmark:" destination="0X3-Aj-E3D" eventType="touchUpInside" id="S4r-5f-mNd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="igX-Aj-plZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="pSF-a9-dFJ" firstAttribute="centerY" secondItem="vEB-he-SwN" secondAttribute="centerY" id="Goc-yz-mdK"/>
                             <constraint firstItem="fGb-q2-6pv" firstAttribute="top" secondItem="igX-Aj-plZ" secondAttribute="top" id="HYV-48-Jbr"/>
                             <constraint firstAttribute="trailing" secondItem="fGb-q2-6pv" secondAttribute="trailing" id="MW1-i6-vgx"/>
                             <constraint firstAttribute="bottom" secondItem="fGb-q2-6pv" secondAttribute="bottom" id="OvT-jN-nOm"/>
+                            <constraint firstItem="pSF-a9-dFJ" firstAttribute="leading" secondItem="fel-CP-upO" secondAttribute="leadingMargin" id="Rbw-2S-BvJ"/>
+                            <constraint firstItem="pSF-a9-dFJ" firstAttribute="top" secondItem="igX-Aj-plZ" secondAttribute="top" constant="20" id="il9-Tu-oDw"/>
+                            <constraint firstItem="vEB-he-SwN" firstAttribute="trailing" secondItem="fel-CP-upO" secondAttribute="trailingMargin" id="pcv-f3-GmO"/>
+                            <constraint firstItem="vEB-he-SwN" firstAttribute="top" secondItem="igX-Aj-plZ" secondAttribute="top" constant="19" id="v07-a0-4Y2"/>
                             <constraint firstItem="fGb-q2-6pv" firstAttribute="leading" secondItem="fel-CP-upO" secondAttribute="leading" id="vnl-U4-4kd"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bookmarkButton" destination="vEB-he-SwN" id="UFc-ef-yOI"/>
                         <outlet property="tableView" destination="fGb-q2-6pv" id="Rpb-bU-9SO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rXx-gL-zfd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1288.8" y="113.79310344827587"/>
-        </scene>
-        <!--See All View Controller-->
-        <scene sceneID="1AD-tB-Bnr">
-            <objects>
-                <viewController storyboardIdentifier="SeeAllViewController" id="Elt-qz-THm" customClass="SeeAllViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="rFy-3t-Mg7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="0gZ-3S-L0l">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="191" id="2Zj-FO-NNA" customClass="SeeAllCell" customModule="Book_Shop" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.666666030883789" width="375" height="191"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2Zj-FO-NNA" id="aHS-hW-hgu">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="191"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Default" translatesAutoresizingMaskIntoConstraints="NO" id="MRM-dz-DAR">
-                                                    <rect key="frame" x="16" y="16" width="112" height="160"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BooDepth" translatesAutoresizingMaskIntoConstraints="NO" id="1bK-ns-zm6">
-                                                    <rect key="frame" x="16" y="16" width="112" height="160"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The main tale of tThe main tale of t" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8kX-gj-1gj">
-                                                    <rect key="frame" x="136" y="41" width="223" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="bookDepth" destination="1bK-ns-zm6" id="u6E-PA-uIY"/>
-                                            <outlet property="cover" destination="MRM-dz-DAR" id="ikq-ZU-Sqg"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="nUf-tK-yz8"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="0gZ-3S-L0l" firstAttribute="top" secondItem="rFy-3t-Mg7" secondAttribute="topMargin" constant="-44" id="71b-kv-CPJ"/>
-                            <constraint firstItem="0gZ-3S-L0l" firstAttribute="centerX" secondItem="rFy-3t-Mg7" secondAttribute="centerX" id="7ef-je-nTZ"/>
-                            <constraint firstItem="0gZ-3S-L0l" firstAttribute="leading" secondItem="nUf-tK-yz8" secondAttribute="leading" id="pPg-6L-ybk"/>
-                            <constraint firstItem="0gZ-3S-L0l" firstAttribute="centerY" secondItem="rFy-3t-Mg7" secondAttribute="centerY" id="tV6-T5-KNS"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1rX-8S-qIX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2958" y="324"/>
         </scene>
         <!--Book3D View Controller-->
         <scene sceneID="vfX-rL-I2R">
@@ -414,10 +417,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="BooDepth" width="1229" height="1801"/>
-        <image name="Default" width="435" height="600"/>
+        <image name="bookmark" catalog="system" width="112" height="128"/>
+        <image name="bookmark.fill" catalog="system" width="112" height="128"/>
         <image name="books.vertical" catalog="system" width="128" height="107"/>
         <image name="books.vertical.fill" catalog="system" width="128" height="109"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

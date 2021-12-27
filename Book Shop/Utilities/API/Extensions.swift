@@ -7,6 +7,16 @@
 
 import UIKit
 
+extension UIViewController {
+    
+    func presentBookDetailsWith(id:Int) {
+        let detailsVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DetailViewController") as! DetailsViewController
+        detailsVC.bookID = id
+        present(detailsVC, animated: true, completion: nil)
+    }
+    
+}
+
 extension UITableView {
     
     func register<Cell: UITableViewCell>(cell: Cell.Type) {

@@ -9,11 +9,11 @@ import UIKit
 
 class DetailsViewController: UIViewController {
 
-    
     var bookID:Int!
     @IBOutlet weak var tableView: UITableView!
     var bookDetails:Book?
     var items = 0
+    @IBOutlet weak var bookmarkButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +24,16 @@ class DetailsViewController: UIViewController {
         
         //Register for table cell animation
         NotificationCenter.default.addObserver(self, selector: #selector(animateTableCell), name: NSNotification.Name("animateTableCell"), object: nil)
+        
+        
+        if  CoreDataService.shared.bookmarkContainsBook(id: bookID) ==  (bookID != nil) {
+            bookmarkButton.setImage(UIImage(systemName: "bookmark.fill"), for: .normal)
+            bookmarkButton.isSelected = true
+        }  else {
+            bookmarkButton.setImage(UIImage(systemName: "bookmark"), for: .normal)
+            bookmarkButton.isSelected = false
+        }
+        
     }
     
     
@@ -40,6 +50,30 @@ class DetailsViewController: UIViewController {
             }, completion: nil)
         }
 
+    
+    
+    
+    @IBAction func close(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func addToBookmark(_ sender: UIButton) {
+
+        sender.isSelected = !sender.isSelected
+        
+        if sender.isSelected {
+            CoreDataService.shared.addToBookmark(book: bookDetails!)
+            sender.setImage(UIImage(systemName: "bookmark.fill"), for: .normal)
+            print("add to bookmark")
+        } else {
+            CoreDataService.shared.deleteBookWith(id: bookID)
+            sender.setImage(UIImage(systemName: "bookmark"), for: .normal)
+            print("remove from bookmark")
+        }
+        
+    }
+    
     
 }
 
@@ -133,6 +167,8 @@ extension DetailsViewController: UITableViewDataSource, UITableViewDelegate {
             index += 1
         }
     }
+    
+    
     
     
 }
