@@ -9,13 +9,15 @@ import UIKit
 
 class DetailsViewController: UIViewController {
 
+    
+    //MARK: 🔻 Variables and outlets
     var bookID:Int!
     @IBOutlet weak var tableView: UITableView!
     var bookDetails:Book?
     var items = 0
     @IBOutlet weak var bookmarkButton: UIButton!
     
-    
+    //MARK: 🔻 View Cycle
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
@@ -44,7 +46,7 @@ class DetailsViewController: UIViewController {
     }
     
     
-
+    //MARK: 🔻 Functions
     func popUpAnimation(_ view:UIView, delay:TimeInterval)  {
         
         UIView.animate(withDuration: 1, delay: delay, usingSpringWithDamping: 0.40, initialSpringVelocity: 0.60, options: .allowUserInteraction, animations: {
@@ -63,6 +65,7 @@ class DetailsViewController: UIViewController {
     @IBAction func close(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    
     
     
     @IBAction func addToBookmark(_ sender: UIButton) {
@@ -85,6 +88,8 @@ class DetailsViewController: UIViewController {
 }
 
 
+
+//MARK: 🔻 Setup TableView
 extension DetailsViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -174,7 +179,6 @@ extension DetailsViewController: UITableViewDataSource, UITableViewDelegate {
             index += 1
         }
     }
-    
     
     
     

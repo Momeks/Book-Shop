@@ -17,6 +17,7 @@ extension UIViewController {
     
 }
 
+
 extension UITableView {
     
     func register<Cell: UITableViewCell>(cell: Cell.Type) {

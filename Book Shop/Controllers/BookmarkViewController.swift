@@ -19,7 +19,6 @@ class BookmarkViewController: UIViewController {
     var bookmarkData:[NSManagedObject] = []
     
     
-    
     //MARK: 🔻 App Cycle
     override func viewWillAppear(_ animated: Bool) {
         //Set nav title
@@ -124,6 +123,9 @@ extension BookmarkViewController: UICollectionViewDataSource, UICollectionViewDe
     }
     
 }
+
+
+
 
 //MARK: 🔻 Setup CollectionView Flow Layout
 extension BookmarkViewController: UICollectionViewDelegateFlowLayout {

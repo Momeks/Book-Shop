@@ -11,12 +11,15 @@ class PLISTDataSerivce {
 
     static let shared = PLISTDataSerivce()
     
+    
     func getDataFrom(plist:String) -> [Book] {
         let url = Bundle.main.url(forResource: plist, withExtension: "plist")!
         let data = try! Data(contentsOf: url)
         let decoder = PropertyListDecoder()
         return try! decoder.decode([Book].self, from: data)
     }
+    
+    
     
     
     func lookForBookWith(id:Int) -> Book {

@@ -11,13 +11,15 @@ import SceneKit
 
 class Book3DViewController: UIViewController {
     
+    
+    //MARK: 🔻 Variables and outlets
     @IBOutlet weak var the3DScene: SCNView!
     @IBOutlet weak var contentView: UIView!
     var node:SCNNode!
     var didEnd = false
     
-    @IBOutlet weak var coverImage: UIImageView!
     
+    //MARK: 🔻 View Cycle
     override func viewWillAppear(_ animated: Bool) {
         
         if didEnd == false {
@@ -40,6 +42,8 @@ class Book3DViewController: UIViewController {
     }
     
     
+    
+    //MARK: 🔻 Setup 3D Book
     func setup3DBook() {
       
         the3DScene.backgroundColor = .clear

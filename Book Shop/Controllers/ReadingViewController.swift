@@ -10,6 +10,7 @@ import PDFKit
 
 class ReadingViewController: UIViewController  {
     
+    
     var pdfView:PDFView!
     @IBOutlet weak var PDFPreview: UIView!
     

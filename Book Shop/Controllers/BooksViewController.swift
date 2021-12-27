@@ -11,12 +11,14 @@ import AlamofireImage
 
 class BooksViewController: UIViewController {
 
-
+    //MARK: 🔻 Variables and outlets
     @IBOutlet weak var tableView: UITableView!
     var featuredBooks : [Featured] = []
     var bestSeller : [Book] = []
     var newArrival : [Book] = []
     
+    
+    //MARK: 🔻 View Cycle
     override func viewWillAppear(_ animated: Bool) {
         //Set nav title
         self.tabBarController?.title = "Book Store"
@@ -36,6 +38,7 @@ class BooksViewController: UIViewController {
 }
 
 
+//MARK: 🔻 Setup UITableView
 extension BooksViewController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -94,35 +97,6 @@ extension BooksViewController: UITableViewDelegate, UITableViewDataSource {
        return  200
     }
    
-    
-  
-    func animateTableCell() {
-        tableView.reloadData()
-        
-        let cells = tableView.visibleCells
-        let tableHeight: CGFloat = tableView.bounds.size.height
-        
-        for i in cells {
-            let cell: UITableViewCell = i as UITableViewCell
-            cell.transform = CGAffineTransform(translationX: 0, y: tableHeight)
-        }
-        
-        var index = 0
-        
-        for a in cells {
-            let cell: UITableViewCell = a as UITableViewCell
-            
-            UIView.animate(withDuration: 1.1, delay: 0.05 * Double(index), usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: [], animations: {
-                
-                cell.alpha = 0
-                cell.alpha = 1
-                
-                cell.transform = CGAffineTransform(translationX: 0, y: 0);
-            }, completion: nil)
-            
-            index += 1
-        }
-    }
     
 }
 
@@ -213,14 +187,6 @@ extension BooksViewController: UICollectionViewDelegate, UICollectionViewDataSou
         
     }
     
-    
-    
-    /*
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let cell = collectionView.cellForItem(at: indexPath) as! MoviesCollectionCell
-        presetnMovieDetailsWith(id: cell.id)
-    
-    }*/
 
 }
 
