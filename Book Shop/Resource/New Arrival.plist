@@ -3,6 +3,8 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>color</key>
+		<string>#6D904C</string>
 		<key>id</key>
 		<integer>112</integer>
 		<key>title</key>
@@ -21,6 +23,8 @@
 		<string>January 12, 2021</string>
 	</dict>
 	<dict>
+		<key>color</key>
+		<string>#BDBCB8</string>
 		<key>id</key>
 		<integer>113</integer>
 		<key>title</key>
@@ -40,6 +44,8 @@ Ruby gives up talking at a young age. Her mother isn&apos;t always there to noti
 		<string>November 16, 2021</string>
 	</dict>
 	<dict>
+		<key>color</key>
+		<string>#BB8953</string>
 		<key>id</key>
 		<integer>114</integer>
 		<key>title</key>
@@ -58,6 +64,8 @@ Ruby gives up talking at a young age. Her mother isn&apos;t always there to noti
 		<string>February 16, 2021</string>
 	</dict>
 	<dict>
+		<key>color</key>
+		<string>#CED5D0</string>
 		<key>id</key>
 		<integer>115</integer>
 		<key>title</key>
@@ -77,6 +85,8 @@ Isaiah was Samuel&apos;s and Samuel was Isaiah&apos;s. That was the way it was s
 		<string>G.P. Putnam&apos;s Sons</string>
 	</dict>
 	<dict>
+		<key>color</key>
+		<string>#425269</string>
 		<key>id</key>
 		<integer>116</integer>
 		<key>title</key>
@@ -96,6 +106,8 @@ Orlando is, in fact, a character liberated from the restraints of time and sex. 
 		<string>October 24, 1973</string>
 	</dict>
 	<dict>
+		<key>color</key>
+		<string>#76B4F3</string>
 		<key>id</key>
 		<integer>117</integer>
 		<key>title</key>
@@ -115,6 +127,8 @@ Benson and Mike are two young guys who live together in Houston. Mike is a Japan
 		<string>October 27, 2020</string>
 	</dict>
 	<dict>
+		<key>color</key>
+		<string>#F5CB4B</string>
 		<key>id</key>
 		<integer>118</integer>
 		<key>title</key>
@@ -133,6 +147,8 @@ Benson and Mike are two young guys who live together in Houston. Mike is a Japan
 		<string>May 11, 2021</string>
 	</dict>
 	<dict>
+		<key>color</key>
+		<string>#F1EBDB</string>
 		<key>id</key>
 		<integer>119</integer>
 		<key>title</key>
@@ -151,6 +167,8 @@ Benson and Mike are two young guys who live together in Houston. Mike is a Japan
 		<string>January 01, 1982</string>
 	</dict>
 	<dict>
+		<key>color</key>
+		<string>#D97983</string>
 		<key>id</key>
 		<integer>120</integer>
 		<key>title</key>
@@ -170,6 +188,8 @@ With the entire nation desperate for any new information about the astronauts, C
 		<string>February 04, 2020</string>
 	</dict>
 	<dict>
+		<key>color</key>
+		<string>#85BDDA</string>
 		<key>id</key>
 		<integer>121</integer>
 		<key>title</key>

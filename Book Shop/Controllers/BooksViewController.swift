@@ -9,6 +9,7 @@ import UIKit
 
 class BooksViewController: UIViewController {
 
+
     @IBOutlet weak var tableView: UITableView!
     var featuredBooks : [Featured] = []
     var bestSeller : [Book] = []
@@ -161,7 +162,7 @@ extension BooksViewController: UICollectionViewDelegate, UICollectionViewDataSou
         }
     }
     
-    
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let section = BooksCategory.allCases[collectionView.tag]
@@ -199,6 +200,14 @@ extension BooksViewController: UICollectionViewDelegate, UICollectionViewDataSou
     
         case .bestSeller , .newArrivals:
             let cell = collectionView.cellForItem(at: indexPath) as! BookCollectionCell
+            BookCovers.shared.cover = cell.cover.image
+            
+            BookCovers.shared.backCover = BookCovers.shared.backCover(title: cell.bookObject?.title ?? "",
+                                                                      author: cell.bookObject?.author ?? "",
+                                                                      description: cell.bookObject?.summary ?? "",
+                                                                      color: cell.bookObject?.color ?? "")
+            
+            BookCovers.shared.sideCover = BookCovers.shared.sideCover(title: cell.bookObject?.title ?? "", color: cell.bookObject?.color ?? "")
             presentBookDetailsWith(id: cell.id)
         }
         
@@ -251,6 +260,15 @@ extension BooksViewController: UICollectionViewDelegateFlowLayout {
     }
     
    
+
+}
+
+
+extension BooksViewController: Book3DViewControllerDelegate {
+    
+    func setCover(image: UIImage) {
+        
+    }
     
     
 }

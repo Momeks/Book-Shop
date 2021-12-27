@@ -11,6 +11,7 @@
 		7B7EA02627786C1400BA433A /* PLISTDataSerivce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7EA02527786C1400BA433A /* PLISTDataSerivce.swift */; };
 		7B7EA0282778960800BA433A /* Book3DViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7EA0272778960800BA433A /* Book3DViewController.swift */; };
 		7B7EA02A2778963400BA433A /* 3DBook.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B7EA0292778963400BA433A /* 3DBook.scnassets */; };
+		7B7EA02C2778B87D00BA433A /* BookCovers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7EA02B2778B87D00BA433A /* BookCovers.swift */; };
 		7BEE1C372773B4F600BF7B11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE1C362773B4F600BF7B11 /* AppDelegate.swift */; };
 		7BEE1C392773B4F600BF7B11 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE1C382773B4F600BF7B11 /* SceneDelegate.swift */; };
 		7BEE1C3B2773B4F600BF7B11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE1C3A2773B4F600BF7B11 /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 		7B7EA02527786C1400BA433A /* PLISTDataSerivce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLISTDataSerivce.swift; sourceTree = "<group>"; };
 		7B7EA0272778960800BA433A /* Book3DViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book3DViewController.swift; sourceTree = "<group>"; };
 		7B7EA0292778963400BA433A /* 3DBook.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = 3DBook.scnassets; sourceTree = "<group>"; };
+		7B7EA02B2778B87D00BA433A /* BookCovers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCovers.swift; sourceTree = "<group>"; };
 		7BEE1C332773B4F600BF7B11 /* Book Shop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Book Shop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BEE1C362773B4F600BF7B11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BEE1C382773B4F600BF7B11 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				7BEE1C5427746D6500BF7B11 /* Books.swift */,
 				7BEE1C6527747A0300BF7B11 /* BookCategory.swift */,
 				7BEE1C5627746E3F00BF7B11 /* Featured.swift */,
+				7B7EA02B2778B87D00BA433A /* BookCovers.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B7EA0282778960800BA433A /* Book3DViewController.swift in Sources */,
+				7B7EA02C2778B87D00BA433A /* BookCovers.swift in Sources */,
 				7BEE1C3B2773B4F600BF7B11 /* ViewController.swift in Sources */,
 				7BEE1C5F277470EB00BF7B11 /* BooksViewController.swift in Sources */,
 				7B7EA02627786C1400BA433A /* PLISTDataSerivce.swift in Sources */,

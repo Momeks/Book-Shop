@@ -13,20 +13,17 @@ class DetailsViewController: UIViewController {
     var bookID:Int!
     @IBOutlet weak var tableView: UITableView!
     var bookDetails:Book?
-    
-    
-    
-    
-    override func viewDidAppear(_ animated: Bool) {
-        
-   
-    }
+    var items = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tableView.allowsSelection = false
+        
         bookDetails = PLISTDataSerivce.shared.lookForBookWith(id: bookID)
         
+        //Register for table cell animation
+        NotificationCenter.default.addObserver(self, selector: #selector(animateTableCell), name: NSNotification.Name("animateTableCell"), object: nil)
     }
     
     
@@ -50,7 +47,7 @@ class DetailsViewController: UIViewController {
 extension DetailsViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return items
     }
     
     
@@ -104,6 +101,38 @@ extension DetailsViewController: UITableViewDataSource, UITableViewDelegate {
         return cellID ?? ""
     }
     
+    
+  @objc  func animateTableCell() {
+        items = 4
+      
+        tableView.reloadData()
+        
+        
+        let cells = tableView.visibleCells
+        let tableHeight: CGFloat = tableView.bounds.size.height
+        
+        for i in cells {
+            let cell: UITableViewCell = i as UITableViewCell
+            cell.transform = CGAffineTransform(translationX: 0, y: tableHeight)
+        }
+        
+        var index = 0
+        
+        for a in cells {
+            let cell: UITableViewCell = a as UITableViewCell
+            
+            
+            UIView.animate(withDuration: 1.1, delay: 0.05 * Double(index), usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: [], animations: {
+                
+                cell.alpha = 0
+                cell.alpha = 1
+                
+                cell.transform = CGAffineTransform(translationX: 0, y: 0);
+            }, completion: nil)
+            
+            index += 1
+        }
+    }
     
     
 }

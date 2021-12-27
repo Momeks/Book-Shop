@@ -5,6 +5,8 @@
 	<dict>
 		<key>id</key>
 		<integer>100</integer>
+		<key>color</key>
+		<string>#D13834</string>
 		<key>title</key>
 		<string>Crying in H Mart: A Memoir</string>
 		<key>author</key>
@@ -21,6 +23,8 @@
 		<string>April 20, 2021</string>
 	</dict>
 	<dict>
+		<key>color</key>
+		<string>#CE9E36</string>
 		<key>id</key>
 		<integer>102</integer>
 		<key>title</key>
@@ -40,6 +44,8 @@ Nearing the age at which his mother had migrated to the US, part of the wave of 
 		<string>October 12, 2021</string>
 	</dict>
 	<dict>
+		<key>color</key>
+		<string>#000000</string>
 		<key>id</key>
 		<integer>103</integer>
 		<key>title</key>
@@ -58,6 +64,8 @@ Nearing the age at which his mother had migrated to the US, part of the wave of 
 		<string>September 07, 2021</string>
 	</dict>
 	<dict>
+		<key>color</key>
+		<string>#346966</string>
 		<key>id</key>
 		<integer>104</integer>
 		<key>title</key>
@@ -76,6 +84,8 @@ Nearing the age at which his mother had migrated to the US, part of the wave of 
 		<string>July 13, 2021</string>
 	</dict>
 	<dict>
+		<key>color</key>
+		<string>#5B8A98</string>
 		<key>id</key>
 		<integer>105</integer>
 		<key>title</key>
@@ -94,6 +104,8 @@ Nearing the age at which his mother had migrated to the US, part of the wave of 
 		<string>February 02, 2021</string>
 	</dict>
 	<dict>
+		<key>color</key>
+		<string>#D14A34</string>
 		<key>id</key>
 		<integer>106</integer>
 		<key>title</key>
@@ -112,6 +124,8 @@ Nearing the age at which his mother had migrated to the US, part of the wave of 
 		<string>September 14, 2021</string>
 	</dict>
 	<dict>
+		<key>color</key>
+		<string>#FEFEFE</string>
 		<key>id</key>
 		<integer>107</integer>
 		<key>title</key>
@@ -130,6 +144,8 @@ Nearing the age at which his mother had migrated to the US, part of the wave of 
 		<string>October 05, 2021</string>
 	</dict>
 	<dict>
+		<key>color</key>
+		<string>#E6DCB6</string>
 		<key>id</key>
 		<integer>108</integer>
 		<key>title</key>
@@ -148,6 +164,8 @@ Nearing the age at which his mother had migrated to the US, part of the wave of 
 		<string>September 21, 2021</string>
 	</dict>
 	<dict>
+		<key>color</key>
+		<string>#FADD4B</string>
 		<key>id</key>
 		<integer>109</integer>
 		<key>title</key>
@@ -167,6 +185,8 @@ The long-awaited new novel from one of America&apos;s most highly regarded conte
 		<string>March 02, 2021</string>
 	</dict>
 	<dict>
+		<key>color</key>
+		<string>#F6D851</string>
 		<key>id</key>
 		<integer>110</integer>
 		<key>title</key>
@@ -181,11 +201,13 @@ In this New York Times bestselling novel, Pulitzer Prize and National Book Award
 		<key>publisher</key>
 		<string>Harper</string>
 		<key>pages</key>
-		<integer>0</integer>
+		<integer>140</integer>
 		<key>publishDate</key>
 		<string>November 09, 2021</string>
 	</dict>
 	<dict>
+		<key>color</key>
+		<string>#323771</string>
 		<key>id</key>
 		<integer>111</integer>
 		<key>title</key>

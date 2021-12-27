@@ -17,5 +17,5 @@ class DetailsTableCell: UITableViewCell {
     @IBOutlet weak var publisher: UILabel!
     @IBOutlet weak var pages: UILabel!
     @IBOutlet weak var publishDate: UILabel!
-    
+
 }

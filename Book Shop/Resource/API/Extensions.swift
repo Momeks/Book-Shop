@@ -17,7 +17,6 @@ extension UITableView {
 }
 
 
-
 extension UICollectionView {
     
     func register<Cell: UICollectionViewCell>(cell: Cell.Type) {
@@ -60,3 +59,5 @@ extension UIView  {
         
        }
 }
+
+

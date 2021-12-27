@@ -9,7 +9,6 @@ import UIKit
 
 class SeeAllViewController: UIViewController {
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         

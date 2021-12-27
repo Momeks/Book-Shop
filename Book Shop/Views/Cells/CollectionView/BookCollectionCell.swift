@@ -11,10 +11,10 @@ import AlamofireImage
 class BookCollectionCell: UICollectionViewCell {
     
     @IBOutlet weak var cover: UIImageView!
-    var id:Int!
     @IBOutlet weak var bookDepth: UIImageView!
- 
+    var id:Int!
     var bookObject : Book?
+    var hexString:String!
     
     private var resizeFilter :ImageFilter {
         AspectScaledToFillSizeFilter(size: CGSize(width: 150, height: 250))
@@ -42,6 +42,7 @@ class BookCollectionCell: UICollectionViewCell {
         
         
             self.id = bookObject?.id ?? 0
+            self.hexString = bookObject?.color ?? "00000"
             let coverURL = bookObject?.coverURL ?? ""
     
             DispatchQueue.main.async {

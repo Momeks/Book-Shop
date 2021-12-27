@@ -17,6 +17,7 @@ struct Book:Codable {
     var pages:Int?
     var publishDate:String?
     var publisher:String?
+    var color:String?
     
 }
 
