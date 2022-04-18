@@ -7,7 +7,7 @@
 
 import Foundation
 
- enum BooksCategory :String, CaseIterable {
+ enum BooksCategory: String, CaseIterable {
     case featured = "Featured"
     case bestSeller = "Best Sellers"
     case newArrivals = "New Arrivals"

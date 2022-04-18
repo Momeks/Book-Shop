@@ -430,13 +430,12 @@
                         <viewLayoutGuide key="safeArea" id="B5w-h9-Qel"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="d5e-iD-yVm" firstAttribute="leading" secondItem="B5w-h9-Qel" secondAttribute="leading" id="4YG-PS-4VB"/>
-                            <constraint firstItem="FR8-lW-ytz" firstAttribute="leading" secondItem="iRn-Kj-LcX" secondAttribute="leadingMargin" id="8LO-kl-PU9"/>
-                            <constraint firstItem="d5e-iD-yVm" firstAttribute="centerX" secondItem="iRn-Kj-LcX" secondAttribute="centerX" id="9IN-4D-69T"/>
-                            <constraint firstItem="FR8-lW-ytz" firstAttribute="top" secondItem="B5w-h9-Qel" secondAttribute="top" constant="20" id="EGu-Uy-yX0"/>
-                            <constraint firstItem="B5w-h9-Qel" firstAttribute="bottom" secondItem="FR8-lW-ytz" secondAttribute="bottom" constant="682" id="dmO-aY-GHR"/>
-                            <constraint firstItem="d5e-iD-yVm" firstAttribute="centerY" secondItem="iRn-Kj-LcX" secondAttribute="centerY" id="fHL-eq-ARA"/>
-                            <constraint firstItem="d5e-iD-yVm" firstAttribute="top" secondItem="iRn-Kj-LcX" secondAttribute="topMargin" id="oRU-n2-HCs"/>
+                            <constraint firstItem="d5e-iD-yVm" firstAttribute="centerX" secondItem="iRn-Kj-LcX" secondAttribute="centerX" id="6sg-bc-Wbh"/>
+                            <constraint firstItem="FR8-lW-ytz" firstAttribute="top" secondItem="B5w-h9-Qel" secondAttribute="top" constant="20" id="VOH-Mo-BPX"/>
+                            <constraint firstItem="d5e-iD-yVm" firstAttribute="centerY" secondItem="iRn-Kj-LcX" secondAttribute="centerY" id="aQH-Sa-83G"/>
+                            <constraint firstItem="d5e-iD-yVm" firstAttribute="leading" secondItem="B5w-h9-Qel" secondAttribute="leading" id="f6K-1c-QhG"/>
+                            <constraint firstItem="FR8-lW-ytz" firstAttribute="leading" secondItem="iRn-Kj-LcX" secondAttribute="leadingMargin" id="k6b-jW-PJK"/>
+                            <constraint firstItem="d5e-iD-yVm" firstAttribute="top" secondItem="B5w-h9-Qel" secondAttribute="top" id="ux2-Xd-auT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Tpj-yV-hd0"/>
@@ -472,6 +471,7 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="HUa-NV-Mdi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="9Q1-Dx-ltr" secondAttribute="bottom" id="Bhq-6b-QsK"/>

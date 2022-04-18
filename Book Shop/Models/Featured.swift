@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Featured:Codable {
-    var id:Int?
+struct Featured: Codable {
+    var id: Int?
 }
 

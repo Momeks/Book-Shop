@@ -7,20 +7,18 @@
 
 import Foundation
 
-struct Book:Codable {
-    
-    var id:Int?
-    var title:String?
-    var summary:String?
-    var coverURL:String?
-    var author:String?
-    var pages:Int?
-    var publishDate:String?
-    var publisher:String?
-    var color:String?
-    
+struct Book: Codable {
+   let id: Int?
+   let title: String?
+   let summary: String?
+   let coverURL: String?
+   let author: String?
+   let pages: Int?
+   let publishDate: String?
+   let publisher: String?
+   let color: String?
 }
 
-struct BookContents:Codable {
-    var books:[Book]
+struct BookContents: Codable {
+    let books: [Book]
 }
